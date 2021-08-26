@@ -23,7 +23,7 @@ describe('Nav component', () => {
     />)
   });
   // snapshot test
-  it('matches snapshor', () => {
+  it('matches snapshot', () => {
     const { asFragment } = render(<Nav 
       categories={categories}
       setCategory={mockSetCategory}
