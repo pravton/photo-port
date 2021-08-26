@@ -3,7 +3,7 @@
 exports[`Nav component matches snapshor 1`] = `
 <DocumentFragment>
   <header
-    class="flex-row"
+    class="flex-row px-1"
   >
     <h2>
       <a
@@ -39,31 +39,10 @@ exports[`Nav component matches snapshor 1`] = `
           </span>
         </li>
         <li
-          class="mx-1"
-        >
-          <span>
-            Commercial
-          </span>
-        </li>
-        <li
-          class="mx-1"
+          class="mx-1 false"
         >
           <span>
             Portraits
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Food
-          </span>
-        </li>
-        <li
-          class="mx-1"
-        >
-          <span>
-            Landscape
           </span>
         </li>
       </ul>
