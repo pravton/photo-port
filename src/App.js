@@ -15,7 +15,7 @@ function App() {
     { name: 'food', description: 'Delicious delicacies' },
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
-
+  const [ contactSelected, setContactSelected ] = useState(false);
   const [currentCategory, setCategory ] = useState(categories[0]);
   return (
     <div>
@@ -23,13 +23,20 @@ function App() {
         categories={categories}
         setCategory={setCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <ContactFrom></ContactFrom>
-        <Gallery
+        {!contactSelected ? (
+        <>
+          <Gallery
           currentCategory={currentCategory}
-        ></Gallery>
-        <About></About>
+          ></Gallery>
+          <About></About>
+        </>
+        ) : (
+          <ContactFrom></ContactFrom>
+        )}
       </main>
     </div>
   )
